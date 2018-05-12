@@ -29,7 +29,7 @@ public class CategoriaResource {
 
         Categoria categoria = this.categoriaService.buscar(id);
         if(categoria == null) {
-            return ResponseEntity.notFound().build();
+
         }
         return ResponseEntity.ok(categoria);
     }
